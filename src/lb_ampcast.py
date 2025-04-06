@@ -72,6 +72,7 @@ def main():
     player_version = settings_json["ampcastVersion"]
     listens = settings_json["backup"].get("listens", ())
 
+    print(f"submitting {len(listens)} listens")
     for listen_batch in batched(listens, LB_MAX_LISTENS_PER_REQUEST):
         lb_listen_batch = tuple(
             Listen(
