@@ -1,0 +1,2 @@
+pylistenbrainz>=0.5.1
+tldextract>=5.1.3
