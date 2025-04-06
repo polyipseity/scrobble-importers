@@ -1,11 +1,18 @@
-from _init import NAME, StrURL, StrUUID, StrVersion, Timestamp, VERSION
+from _init import (
+    LB_MAX_LISTENS_PER_REQUEST,
+    NAME,
+    StrURL,
+    StrUUID,
+    StrVersion,
+    Timestamp,
+    VERSION,
+)
 from itertools import batched
 from json import load
 from pylistenbrainz import Listen, ListenBrainz  # type: ignore
 from tldextract import extract
 from typing import NotRequired, Sequence, TypedDict, final
 
-LB_MAX_LISTENS_PER_REQUEST = 1000  # <https://listenbrainz.readthedocs.io/latest/users/api/core.html#listenbrainz.webserver.views.api_tools.MAX_LISTENS_PER_REQUEST>
 METADATA_PLAYER = "ampcast"
 
 
